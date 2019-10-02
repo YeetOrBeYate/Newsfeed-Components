@@ -37,16 +37,20 @@ let menuItems = [
     return menu;
   }
 
-  const menuButton = document.querySelector('.menu-button');
+//so here is the hamburgerIcon that acts a a button
+const menuButton = document.querySelector('.menu-button');
 
-  menuButton.addEventListener('click', (e)=>{
-  menu.classList.toggle('menu--open')
-  })
+//Despite what the directions say, we need to add this to the header
+const header = document.querySelector('.header');
+//We also need to store the menu component in memory to toggle it later duhhhh
+const menu = makeMenu(menuItems);
+header.appendChild(menu);
 
-  const header = document.querySelector('.header');
-  const menu = makeMenu(menuItems);
+menuButton.addEventListener('click', (e)=>{
+menu.classList.toggle('menu--open')
+})
 
-  header.appendChild(menu);
+
 
 
 
