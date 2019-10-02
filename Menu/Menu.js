@@ -47,7 +47,8 @@ const menu = makeMenu(menuItems);
 header.appendChild(menu);
 
 menuButton.addEventListener('click', (e)=>{
-menu.classList.toggle('menu--open')
+// menu.classList.toggle('menu--open')
+menu.classList.toggle('menu--open');
 })
 
 
