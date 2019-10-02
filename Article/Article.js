@@ -129,13 +129,11 @@ const data = [
     article.appendChild(sP);
     article.appendChild(tP);
     article.appendChild(expand);
-
+    //adding event listeners
     expand.addEventListener('click', (e)=>{
       article.classList.toggle('article-open');
     })
-
     return article;
-
   }
 
   const accordion = document.querySelector('.articles');
